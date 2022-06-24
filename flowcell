@@ -1,0 +1,1 @@
+zcat ${fastq.gz}  |sed -n '1~4p' | awk 'BEGIN { FS = ":" } ; { print $4}' | uniq
